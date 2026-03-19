@@ -149,7 +149,7 @@
         .warning-tooltip .correct-ans { color: #4ade80; font-weight: bold; }
         .warning-tooltip .wrong-ans { color: #f87171; font-weight: bold; text-decoration: line-through; }
 
-        /* VENN DIAGRAM & ADMISSION MYTHS (Slide 3) */
+        /* VENN DIAGRAM & ADMISSION MYTHS (Slide 6) */
         .venn-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; height: 100%;}
         .venn-wrapper { position: relative; width: 400px; height: 400px; margin: 0 auto; }
         .venn-circle {
@@ -172,7 +172,7 @@
         .myth-item:last-child { border-bottom: none; }
         .myth-item strong { color: var(--primary-blue); display: block; margin-bottom: 5px;}
 
-        /* SEQUENTIAL MCQ UI (Slide 6) */
+        /* SEQUENTIAL MCQ UI (Slide 8) */
         .mcq-wizard {
             background: white; border-radius: 8px; border: 2px solid #cbd5e1;
             height: 100%; display: flex; flex-direction: column; overflow: hidden;
@@ -206,6 +206,23 @@
         }
         .next-btn.visible { opacity: 1; visibility: visible; }
         .next-btn:hover { background: #1e293b; }
+
+        /* ROADMAP TIMELINE */
+        .roadmap-container {
+            display: flex; justify-content: space-between; position: relative; margin-top: 30px;
+        }
+        .roadmap-line {
+            position: absolute; top: 25px; left: 5%; right: 5%; height: 6px; background: rgba(255,255,255,0.2); z-index: 1; border-radius: 3px;
+        }
+        .roadmap-node {
+            width: 30%; position: relative; z-index: 2; text-align: center;
+        }
+        .roadmap-circle {
+            width: 55px; height: 55px; background: var(--accent-gold); border-radius: 50%; margin: 0 auto 20px auto; 
+            border: 6px solid var(--ny-board-green); display: flex; justify-content: center; align-items: center;
+            font-weight: 900; color: var(--text-dark); font-size: 20px; box-shadow: 0 0 15px rgba(0,0,0,0.5);
+        }
+        .roadmap-node.danger .roadmap-circle { background: var(--danger-red); color: white; box-shadow: 0 0 20px var(--danger-red); border-color: #7f1d1d;}
 
     </style>
 </head>
@@ -376,8 +393,38 @@
     </div>
 </div>
 
-<!-- Slide 5: Giải mã phương thức xét tuyển (Venn) -->
+<!-- Slide 5: Khối Kinh Tế & Dịch Vụ -->
 <div class="slide-container" id="slide5">
+    <h2 class="slide-title">Khối Kinh Tế & Dịch Vụ (Public Sector)</h2>
+    <div class="content-area">
+        <div class="ny-classroom-layout">
+            <div class="ny-chalkboard-pane">
+                <h3>DUE & UFLS</h3>
+                <p style="font-style: italic; opacity: 0.9; margin-bottom: 20px;">"Business & Global Communication"</p>
+                <div class="bullet-list chalk-bullet">
+                    <ul>
+                        <li><strong>ĐH Kinh tế (DUE):</strong> Chuẩn FIBAA (Châu Âu). Đầu tàu về Kinh doanh Quốc tế, Logistics, Kiểm toán.</li>
+                        <li><strong>ĐH Ngoại ngữ (UFLS):</strong> Kỷ luật thép về chuẩn đầu ra ngôn ngữ. Tỷ lệ đỗ N2, IELTS 6.5+ vượt trội.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ny-data-pane">
+                <h3 style="color: var(--primary-blue);"><i class="fa-solid fa-globe"></i> Bộ Lọc Của Nhà Tuyển Dụng</h3>
+                <p>Khối Kinh tế - Dịch vụ dễ bị bão hòa. Uy tín của cơ sở đào tạo là bộ lọc duy nhất:</p>
+                <div class="bullet-list" style="margin-top: 20px;">
+                    <ul>
+                        <li><strong>DUE:</strong> Sinh viên bị ép phải tư duy giải quyết *case study* thật từ doanh nghiệp. Mức học phí tương xứng với chất lượng.</li>
+                        <li><strong>UFLS:</strong> Kiểm tra định kỳ loại bỏ hoàn toàn việc "học lụi". Cung cấp nhân lực cốt lõi cho mảng Du lịch Quốc tế tại Đà Nẵng.</li>
+                        <li><strong>ĐH Sư phạm (UEd):</strong> Lựa chọn công lập tối ưu cho nhóm ngành Khoa học Tự nhiên cơ bản và Tâm lý học.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Slide 6: Giải mã phương thức xét tuyển (Venn) -->
+<div class="slide-container" id="slide6">
     <h2 class="slide-title">Giải Mã Phương Thức Xét Tuyển (ĐH Đà Nẵng)</h2>
     <div class="content-area">
         <div class="ny-classroom-layout" style="grid-template-columns: 1fr 1fr;">
@@ -410,8 +457,58 @@
     </div>
 </div>
 
-<!-- Slide 6: Sequential MCQ Knowledge Check -->
-<div class="slide-container" id="slide6">
+<!-- Slide 7: Roadmap Thực Chiến 2026 -->
+<div class="slide-container" id="slide7">
+    <h2 class="slide-title">Roadmap Thực Chiến: The Clock is Ticking</h2>
+    <div class="content-area">
+        <div class="ny-chalkboard-pane" style="height: 100%; border-width: 15px; border-radius: 8px;">
+            <h3 style="text-align: center; font-size: 32px; margin-bottom: 20px; letter-spacing: 2px;">CHIẾN LƯỢC PHÂN BỔ THỜI GIAN (LỨA 2008)</h3>
+            
+            <div class="roadmap-container">
+                <div class="roadmap-line"></div>
+                
+                <!-- Node 1 -->
+                <div class="roadmap-node">
+                    <div class="roadmap-circle">1</div>
+                    <h4 style="color: #4ade80; font-size: 22px; margin-bottom: 15px; text-transform: uppercase;">Học Kỳ 1 - Lớp 12</h4>
+                    <div class="bullet-list chalk-bullet" style="font-size: 16px; text-align: left;">
+                        <ul>
+                            <li><strong>Chốt hạ:</strong> Thi lấy chứng chỉ IELTS (Target 6.0+). Giải quyết xong gánh nặng ngoại ngữ.</li>
+                            <li><strong>Xác định:</strong> Chọn đúng 2 môn tự chọn thế mạnh tuyệt đối (Tránh học lan man 4-5 môn).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Node 2 -->
+                <div class="roadmap-node">
+                    <div class="roadmap-circle">2</div>
+                    <h4 style="color: #facc15; font-size: 22px; margin-bottom: 15px; text-transform: uppercase;">Tháng 3 & 4 / 2026</h4>
+                    <div class="bullet-list chalk-bullet" style="font-size: 16px; text-align: left;">
+                        <ul>
+                            <li><strong>Điểm rơi phong độ:</strong> Cày nát đề ĐGNL. Tham gia kỳ thi Đánh giá năng lực của ĐHQG HCM.</li>
+                            <li>Đây là cơ hội vàng để chốt sớm 70% vé vào các trường công lập TOP như DUE, DUT.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Node 3 -->
+                <div class="roadmap-node danger">
+                    <div class="roadmap-circle"><i class="fa-solid fa-radiation"></i></div>
+                    <h4 style="color: var(--danger-red); font-size: 22px; margin-bottom: 15px; text-transform: uppercase; text-shadow: 0 0 5px rgba(220,38,38,0.5);">Tháng 6 / 2026</h4>
+                    <div class="bullet-list chalk-bullet" style="font-size: 16px; text-align: left;">
+                        <ul>
+                            <li><strong>Kỳ thi THPTQG:</strong> Tập trung tối đa vào 4 môn thi chính thức.</li>
+                            <li>Kỹ năng sinh tồn: Rèn luyện vòng lặp kiểm tra sai số làm tròn điểm phần "Trả lời ngắn".</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Slide 8: Sequential MCQ Knowledge Check -->
+<div class="slide-container" id="slide8">
     <h2 class="slide-title">Knowledge Check: Phân Tích Thông Tin</h2>
     <div class="content-area">
         <div class="mcq-wizard">
@@ -490,7 +587,7 @@
     }
 
     // ==========================================
-    // MODULE 2: SEQUENTIAL MCQ WIZARD (Slide 6)
+    // MODULE 2: SEQUENTIAL MCQ WIZARD (Slide 8)
     // ==========================================
     const mcqData = [
         {
@@ -532,6 +629,16 @@
             ],
             correctIndex: 0,
             explanation: "Doanh nghiệp (đặc biệt khối kỹ thuật FDI) ưu tiên sinh viên Công lập vì khả năng 'chịu nhiệt' đã được chứng minh qua áp lực rớt môn."
+        },
+        {
+            q: "Theo Roadmap thực chiến, vào giai đoạn Tháng 3 - Tháng 4 của lớp 12, hành động chiến lược nào là tối ưu nhất?",
+            options: [
+                "A. Dồn 100% sức để ôn thi 4 môn THPTQG.",
+                "B. Tham gia kỳ thi Đánh giá năng lực (ĐGNL) để chốt vé an toàn.",
+                "C. Bắt đầu học IELTS từ con số 0."
+            ],
+            correctIndex: 1,
+            explanation: "Kỳ thi ĐGNL (thường diễn ra đợt 1 vào cuối tháng 3/đầu tháng 4) là phao cứu sinh lớn nhất, chiếm trọng số xét tuyển ngày càng cao tại các trường TOP."
         }
     ];
 
@@ -632,4 +739,3 @@
 
 </body>
 </html>
-```
