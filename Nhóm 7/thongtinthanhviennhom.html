@@ -1,0 +1,192 @@
+<section class="team-section">
+    <div class="navigation_menu">
+        <a href="Web.html" class="box">Trang chủ</a>
+        <a href="Dauhieu.html" class="box">Dấu hiệu</a>
+        <a href="cachthuc.html" class="box">Phòng chống</a>
+        <a href="gopy.html" class="box">Góp ý</a>
+        <a href="thongtinthanhviennhom.html" class="box"> nhóm 7 </a>
+    </div>
+
+    <div class="container">
+        <h2 class="section-title">Thành Viên Nhóm & Nhiệm Vụ</h2>
+        <p class="section-subtitle">Gặp gỡ những con người nhiệt huyết đứng sau dự án này.</p>
+
+        <div class="team-container">
+            <div class="member-card">
+                <div class="card-inner">
+                    <div class="avatar">NH</div>
+                    <h3>Ngọc Huy</h3>
+                    <span class="position">Trưởng Nhóm</span>
+                    <p class="description">Chịu trách nhiệm lập kế hoạch, điều phối nhân sự và đảm bảo dự án đi đúng
+                        tiến độ đề ra.</p>
+                </div>
+            </div>
+
+            <div class="member-card">
+                <div class="card-inner">
+                    <div class="avatar">HT</div>
+                    <h3>Hữu Toàn</h3>
+                    <span class="position">Làm tra cứu phần file web </span>
+                </div>
+            </div>
+
+            <div class="member-card">
+                <div class="card-inner">
+                    <div class="avatar">CĐ</div>
+                    <h3>Cẩm Đào</h3>
+                    <span class="position"> làm phần dấu hiệu nhận biết lừa đảo qua không gian mạng</span>
+                    <p class="description">Thiết kế giao diện Css </p>
+                </div>
+            </div>
+
+            <div class="member-card">
+                <div class="card-inner">
+                    <div class="avatar">PT</div>
+                    <h3>Phước Thịnh</h3>
+                    <span class="position">thiết kế file góp ý </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* --- CSS CẬP NHẬT CHO THANH ĐIỀU HƯỚNG (NAVBAR) --- */
+    .navigation_menu {
+        background-color: #1e2229;
+        /* Màu nền tối theo ảnh mẫu */
+        border-top: 6px solid #2563eb;
+        /* Dải màu xanh dương phía trên */
+        padding: 20px 0;
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        margin-top: -80px;
+        /* Đưa lên sát đầu trang do padding của section */
+        margin-bottom: 50px;
+        width: 100%;
+    }
+
+    .box {
+        text-decoration: none;
+        color: #ffffff;
+        background-color: #323741;
+        /* Màu nút xám đậm */
+        padding: 8px 18px;
+        border-radius: 8px;
+        /* Bo góc nút */
+        border: 1px solid #4b5563;
+        /* Viền mảnh */
+        font-weight: bold;
+        font-size: 15px;
+        font-family: sans-serif;
+        transition: all 0.2s ease;
+    }
+
+    .box:hover {
+        border-color: #60a5fa;
+        color: #60a5fa;
+        background-color: #3f4551;
+    }
+
+    /* --- GIỮ NGUYÊN CSS PHẦN THÀNH VIÊN --- */
+    :root {
+        --primary-color: #4f46e5;
+        --text-dark: #1f2937;
+        --text-light: #6b7280;
+        --bg-color: #f9fafb;
+    }
+
+    .team-section {
+        background-color: var(--bg-color);
+        padding: 80px 0;
+        /* Đã chỉnh lại padding */
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+        color: var(--text-dark);
+        margin-bottom: 10px;
+    }
+
+    .section-subtitle {
+        color: var(--text-light);
+        margin-bottom: 50px;
+        font-size: 1.1rem;
+    }
+
+    .team-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 30px;
+        padding: 0 20px;
+    }
+
+    .member-card {
+        background: #ffffff;
+        border-radius: 15px;
+        padding: 30px 20px;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+        border: 1px solid #e5e7eb;
+    }
+
+    .member-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        border-color: var(--primary-color);
+    }
+
+    .avatar {
+        width: 70px;
+        height: 70px;
+        background: var(--primary-color);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        margin: 0 auto 20px;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .member-card h3 {
+        color: var(--text-dark);
+        margin-bottom: 8px;
+        font-size: 1.4rem;
+    }
+
+    .position {
+        display: block;
+        color: var(--primary-color);
+        font-weight: 600;
+        margin-bottom: 15px;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+    }
+
+    .description {
+        color: var(--text-light);
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    @media (max-width: 600px) {
+        .section-title {
+            font-size: 2rem;
+        }
+
+        .navigation_menu {
+            flex-wrap: wrap;
+            padding: 10px;
+        }
+    }
+</style>

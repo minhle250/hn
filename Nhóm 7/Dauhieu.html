@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8">
+    <title>Các Dấu Hiệu Lừa Đảo Và Phòng Chống</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            background-color: #f8fafc;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1e3a8a, #2563eb);
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .navigation_menu {
+            background-color: #000;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .box {
+            display: inline-block;
+            width: 110px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            border: 2px solid white;
+            color: white;
+            background-color: gray;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 5px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        /* Lưới các thẻ nội dung mẫu image_6315c6.png */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            position: relative;
+            border: 1px solid #e2e8f0;
+        }
+
+        .card-title {
+            color: #2563eb;
+            font-weight: bold;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .number-circle {
+            background: #2563eb;
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+        }
+
+        .warning-text {
+            color: #ef4444;
+            font-weight: bold;
+        }
+
+        .footer {
+            background: #0a1a5e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        /* Chèn đoạn này vào phần <style> của các file .html */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    /* Tạo hiệu ứng nền loang chuyên nghiệp */
+    background-color: #f8fafc;
+    background-image: 
+        radial-gradient(at 0% 0%, rgba(37, 99, 235, 0.1) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(30, 58, 138, 0.1) 0px, transparent 50%);
+    background-attachment: fixed;
+    color: #1e293b;
+}
+
+/* Hiệu ứng lưới (Grid) ẩn bên dưới nền */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image: radial-gradient(#cbd5e1 0.5px, transparent 0.5px);
+    background-size: 24px 24px;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+/* Nâng cấp Header */
+.header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+    padding: 50px 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Làm mới Navigation Menu */
+.navigation_menu {
+    background-color: rgba(15, 23, 42, 0.9);
+    backdrop-filter: blur(10px); /* Hiệu ứng kính mờ */
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.box {
+    border-radius: 6px; /* Bo góc nhẹ cho nút */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.box:hover {
+    background-color: #2563eb;
+    border-color: #2563eb;
+    transform: translateY(-2px);
+}
+
+/* Nâng cấp các thẻ (Card) */
+.card, .link-card, .intro-box, form.custom-border {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(226, 232, 240, 0.8) !important;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+    border-radius: 16px !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover, .link-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    border-color: #2563eb !important;
+}
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>🔍 CÁC DẤU HIỆU NHẬN BIẾT LỪA ĐẢO</h1>
+    </div>
+    <div class="navigation_menu">
+        <a href="Web.html" class="box">Trang chủ</a>
+        <a href="Dauhieu.html" class="box">Dấu hiệu</a>
+        <a href="cachthuc.html" class="box">Phòng chống</a>
+        <a href="gopy.html" class="box">Góp ý</a>
+        <a href="thongtinthanhviennhom.html" class="box"> nhóm 7 </a>
+    </div>
+    <div class="container">
+        <div class="grid">
+            <div class="card">
+                <div class="card-title"><span class="number-circle">1</span> "Việc nhẹ lương cao"</div>
+                <p>Tuyển mẫu ảnh, CTV chốt đơn với thù lao vô lý. <span class="warning-text">CẨN THẬN:</span> Bạn sẽ bị
+                    yêu cầu nộp "phí cọc".</p>
+                    <img src="tam-01-.jpg" alt="" width="700">
+                    </div>
+            </div>
+            <div class="card">
+                <div class="card-title"><span class="number-circle">2</span> Giả danh Công an/Viện kiểm sát</div>
+                <p>Gọi điện thông báo bạn liên quan đến vụ án, yêu cầu chuyển tiền để "kiểm tra". Cơ quan chức năng
+                    không làm việc qua điện thoại!</p>
+                    <img src="t91151.jpg" alt="" width="700">
+            </div>
+            <div class="card">
+                <div class="card-title"><span class="number-circle">3</span> Đường link "lạ" từ ngân hàng qua tin nhắn sms</div>
+                <p>Nhắn tin nhờ bình chọn cuộc thi kèm link đăng nhập. Đừng click! Đó là cách họ chiếm đoạt tài khoản
+                    của bạn.</p>
+                    <img src="1-1661146749298.jpg" alt="" width="700">
+            </div>
+            <div class="card">
+                <div class="card-title"><span class="number-circle">4</span> Deepfake Video Call</div>
+                <p>Người thân gọi video nhưng hình ảnh mờ, hỏi vay tiền gấp. Hãy cúp máy và gọi lại bằng số điện thoại
+                    thường.</p>
+                    <img src="td-300323-trang-1-deepfake-16801435684601839803351.jpg" alt="" width="700">
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Bản quyền thuộc nhóm 7p>
+    </div>
+</body>
+
+</html>

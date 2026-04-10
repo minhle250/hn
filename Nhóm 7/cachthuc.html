@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8">
+    <title>Phòng Chống Lừa Đảo</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            background-color: #f8fafc;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1e3a8a, #2563eb);
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .navigation_menu {
+            background-color: #000;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .box {
+            display: inline-block;
+            width: 110px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            border: 2px solid white;
+            color: white;
+            background-color: gray;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 5px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .link-card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            border: 2px dashed #a7a6a5;
+            transition: 0.3s;
+        }
+
+        .link-card:hover {
+            border-color: #2563eb;
+            background-color: #eff6ff;
+        }
+
+        .link-card a {
+            color: #1e3a8a;
+            font-weight: bold;
+            text-decoration: underline;
+            font-size: 1.2rem;
+        }
+
+        .footer {
+            background: #0a1a5e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        /* Chèn đoạn này vào phần <style> của các file .html */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    /* Tạo hiệu ứng nền loang chuyên nghiệp */
+    background-color: #f8fafc;
+    background-image: 
+        radial-gradient(at 0% 0%, rgba(37, 99, 235, 0.1) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(30, 58, 138, 0.1) 0px, transparent 50%);
+    background-attachment: fixed;
+    color: #1e293b;
+}
+
+/* Hiệu ứng lưới (Grid) ẩn bên dưới nền */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image: radial-gradient(#cbd5e1 0.5px, transparent 0.5px);
+    background-size: 24px 24px;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+/* Nâng cấp Header */
+.header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+    padding: 50px 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Làm mới Navigation Menu */
+.navigation_menu {
+    background-color: rgba(15, 23, 42, 0.9);
+    backdrop-filter: blur(10px); /* Hiệu ứng kính mờ */
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.box {
+    border-radius: 6px; /* Bo góc nhẹ cho nút */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.box:hover {
+    background-color: #2563eb;
+    border-color: #2563eb;
+    transform: translateY(-2px);
+}
+
+/* Nâng cấp các thẻ (Card) */
+.card, .link-card, .intro-box, form.custom-border {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(226, 232, 240, 0.8) !important;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+    border-radius: 16px !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover, .link-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    border-color: #2563eb !important;
+}
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>🛡️ BIỆN PHÁP PHÒNG CHỐNG</h1>
+        <p>dưới đây là các trang web giúp ta phòng tránh lừa đảo qua không gian mạng</p>
+    </div>
+    <div class="navigation_menu">
+        <a href="Web.html" class="box">Trang chủ</a>
+        <a href="Dauhieu.html" class="box">Dấu hiệu</a>
+        <a href="cachthuc.html" class="box">Phòng chống</a>
+        <a href="gopy.html" class="box">Góp ý</a>
+        <a href="thongtinthanhviennhom.html" class="box"> nhóm 7 </a>
+    </div>
+    <div class="container">
+        <h2>Liên kết hữu ích giúp bạn an toàn:</h2>
+        <div class="link-card">
+            <a href="https://chongluadao.vn" target="_blank">👉 Dự án Chống Lừa Đảo (chongluadao.vn)</a>
+            <p>Kiểm tra độ an toàn của trang web và báo cáo các trường hợp lừa đảo.</p>
+            <img src="1_3afe7cc0e3.webp" alt="Logo Cẩm Nang Phòng Chống Lừa Đảo" width="700">
+        </div>
+        <div class="link-card">
+            <a href="https://tinnhiemmang.vn" target="_blank">👉 Cổng Tín Nhiệm Mạng</a>
+            <p>Thông tin từ Trung tâm Giám sát an toàn không gian mạng quốc gia (NCSC).</p>
+            <img src="tải xuống.jfif" alt="Logo Cẩm Nang Phòng Chống Lừa Đảo" width="700">
+        </div>
+        <div class="link-card">
+            <a href="https://canhbao.ncsc.gov.vn" target="_blank">👉 Hệ thống Cảnh báo lừa đảo</a>
+            <p>Nơi tiếp nhận và cảnh báo các hành vi lừa đảo trực tuyến mới nhất.</p>
+            <img src="ccdm11.jfif" alt="Logo Cẩm Nang Phòng Chống Lừa Đảo" width="700">
+        </div>
+    </div>
+    <div class="footer">
+        <p>Bản quyền thuộc nhóm 7 </p>
+    </div>
+</body>
+
+</html>
