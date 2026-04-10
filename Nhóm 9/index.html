@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Báo Tường: An Toàn Thông Tin Số</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-shield-virus"></i> ATTT Số
+            </div>
+            <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Trang Chủ</a></li>
+                <li><a href="about.html">Khái Niệm</a></li>
+                <li><a href="dangers.html">Nguy Cơ</a></li>
+                <li><a href="protection.html">Bảo Vệ</a></li>
+                <li><a href="student-corner.html">Góc Teen</a></li>
+                <li><a href="team.html">Nhóm</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <h1 class="animate-bounce">BÁO TƯỜNG: AN TOÀN THÔNG TIN SỐ</h1>
+            <div class="slogan">
+                <i class="fas fa-mouse-pointer"></i> Click Chuẩn - Lướt An Toàn <i class="fas fa-check-circle"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Registration Form -->
+    <main class="container section">
+        <div class="section-title">
+            <h2><i class="fas fa-user"></i> Đăng Ký CLB "Hiệp Sĩ Số"</h2>
+            <p>Tham gia ngay để trở thành chuyên gia bảo mật học đường!</p>
+        </div>
+        
+        <div class="form-container">
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="name">Họ và Tên Học Sinh</label>
+                    <input type="text" id="name" name="name" placeholder="Ví dụ: Nguyễn Văn A" required>
+                </div>
+                <div class="form-group">
+                    <label for="class">Lớp</label>
+                    <input type="text" id="class" name="class" placeholder="Ví dụ: 12/4" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                </div>
+                <button type="submit" class="btn">Đăng Ký Ngay! <i class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p style="font-family: var(--font-heading); font-size: 1.5rem;">Cùng chung tay xây dựng môi trường mạng an toàn!</p>
+            <p>&copy; 2026 Dự án Báo Tường - Nhóm Nguyễn Thị Bảo Ngọc.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
